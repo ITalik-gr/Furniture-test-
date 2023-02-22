@@ -1,0 +1,109 @@
+.preference {
+  padding: 100px 0;
+  &-slider {
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+  }
+  &-card {
+    position: relative;
+    display: flex;
+    width: 586px;
+    height: 350px;
+    border-radius: 3px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 30px;
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      img {
+
+      }
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 125%;
+      color: #FFFFFF;
+      position: relative;
+      margin-bottom: 15px;
+      &::after {
+        content: '';
+        height: 3px;
+        background: $main-color;
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+      &_2 {
+        &::after {
+          width: 70%;
+        }
+      }
+    }
+    &__descr {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      height: auto;
+      max-height: 0px;
+      opacity: 0;
+      transition: .6s all;
+      visibility: hidden;
+      overflow: hidden;
+    }
+    &:hover {
+      .preference-card__descr {
+        max-height: 93px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &-arrows {
+  }
+  &-arrow {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    @include dfc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    svg {
+      path {
+        fill: black;
+      }
+    }
+    &-next {  
+      right: 20px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &-prev {
+      left: 20px;
+    }
+    &--disable {
+      border: 1px solid #fff;
+      background: transparent;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+  .swiper-backface-hidden .swiper-slide {
+    @include dfc;
+  }
+}

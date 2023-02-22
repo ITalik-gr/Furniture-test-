@@ -1,0 +1,183 @@
+
+.nav {
+  overflow: hidden;
+  &-top {
+    @include dfsb;
+    padding: 10px 0;
+    position: relative;
+    &::after {
+      bottom: 0;
+      left: -150%;
+      position: absolute;
+      content: '';
+      height: 0.5px;
+      width: 300%;
+      background: #1E2E36;
+    }
+  }
+  &-wrap {
+    @include dfsb;
+    padding: 15px 0;
+  }
+  &-block {
+    @include dfc;
+  }
+  &-social {
+    font-size: 18px;
+    line-height: 125%;
+    color: $text-color;
+    margin-right: 50px;
+    @include dfc;
+    &__link {
+      margin-left: 5px;
+    }
+  }
+  &-phone {
+    @include dfc;
+    &__arrow {
+      margin-left: 5px;
+    }
+    &__phone {
+      margin-right: 5px;
+    }
+    &__link {
+      color: $text-color;
+    }
+  }
+  &-list {
+    @include dfc;
+    &__item {
+      margin-right: 15px;
+      a {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        border-bottom: 3px solid transparent;
+        transition: .3s all;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        a {
+          border-bottom: 3px solid $main-color;
+        }
+      }
+      &--active a {
+        border-bottom: 3px solid $main-color;
+      }
+    }
+  }
+
+  &-product-list {
+    @include dfc;
+    &__item {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+      }
+      img {
+        margin-left: 3px;
+      }
+    }
+  }
+  &-logo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 125%;
+    span {
+      color: $main-color;
+    }
+    svg {
+      margin-right: 15px;
+    }
+  }
+  &-cart {
+    font-size: 18px;
+    line-height: 125%;
+    text-transform: uppercase;
+    img {
+      margin-right: 5px;
+    }
+  }
+  &-btn {
+    margin-left: 30px;
+    width: 278px;
+    height: 51px;
+  }
+
+}
+
+.header {
+  position: relative;
+  &-wrap {
+    background: #FFFFFF;
+    border-left: 15px solid $main-color;
+    @include dfc;
+    flex-direction: column;
+    width: 462px;
+    height: 670px;
+    position: absolute;
+    top: -2px;
+    left: 51px;
+    z-index: 3;
+  }
+  &-text {
+    margin-bottom: 50px;
+    @include dfc;
+    flex-direction: column;
+  }
+  &-status {
+    font-size: 64px;
+    line-height: 100%;
+    margin-bottom: 50px;
+  }
+  &-title {
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 10px;
+  }
+  &-descr {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 30px;
+    max-width: 313px;
+  }
+  &-btn {
+    width: 209px;
+    height: 51px;
+  }
+
+  &-info {
+    @include dfc;
+    flex-direction: column;
+  }
+  &-arrows {
+
+  }
+  &-arrow {
+    &-next {
+
+    }
+    &-prev {
+
+    }
+  }
+  &-paginations {
+    font-size: 24px;
+    line-height: 125%;
+    #current {
+      font-size: 36px;
+    }
+    #total {
+
+    }
+  }
+}
