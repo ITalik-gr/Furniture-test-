@@ -1,0 +1,69 @@
+.consult {
+  padding-bottom: 109px;
+  &-image {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+  }
+  &-wrap {
+    position: relative;
+    height: 675px;
+    @include dfc;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+  &-form {
+    background: #FFFFFF;
+    border-left: 15px solid $main-color;
+    border-radius: 3px 0 3px 0;
+    @include dfc;
+    flex-direction: column;
+    padding: 50px 50px 50px 30px;
+    &__title {
+      font-size: 36px;
+      line-height: 125%;
+      margin-bottom: 30px;
+    }
+    &__name {
+    }
+    &__phone {
+
+    }
+    &__btn {
+      outline: none;
+      border: none;
+      width: 432px;
+      height: 51px;
+      margin-bottom: 30px;
+    }
+    input {
+      width: 432px;
+      height: 51px;
+      font-size: 18px;
+      line-height: 125%;
+      color: $text-color;
+      background: #FFFFFF;
+      border: 1px solid #1E2E36;
+      border-radius: 3px;
+      padding: 14px 15px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      &::placeholder {
+        color: rgba(31, 46, 54, 0.6);
+      }
+    }
+    &__descr {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      max-width: 395px;
+      a {
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,3 @@
 <h3 align="center">Test task for a front-end vacancy</h3>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/ITalik-gr/Furniture-test-)
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->

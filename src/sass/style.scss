@@ -46,7 +46,9 @@ ul {
         opacity: 0.9;
     }
 }
-
+body {
+    overflow-x: hidden;
+}
 .page {
     &-title {
         font-size: 48px;
@@ -75,3 +77,6 @@ ul {
 @import 'blocks/header';
 @import 'blocks/preference';
 @import 'blocks/categories';
+@import 'blocks/about';
+@import 'blocks/consult';
+@import 'blocks/footer';

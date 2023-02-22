@@ -1,0 +1,145 @@
+
+.footer {
+  background: #1E2E36;
+  color: #FFFFFF;
+  position: relative;
+  &-arrow {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 12px rgba(130, 130, 130, 0.2);
+    border-radius: 100%;
+    @include dfc;
+    cursor: pointer;
+    background-color: $main-color;
+    position: absolute;
+    top: -9px;
+    left: 36px;
+  }
+  &-wrap {
+    @include dfsb;
+  }
+
+  &-body {
+    @include dfsb;
+    margin-bottom: 85px;
+  }
+  &-bottom {
+    @include dfsb;
+  }
+  &-text {
+    max-width: 662px;
+    width: 100%;
+    padding: 46px 0 15px 0;
+    height: 520px;
+  }
+
+  &-logo {
+    font-size: 36px;
+    line-height: 125%;
+    color: #FFF;
+    margin-bottom: 50px;
+    display: block;
+    &:hover {
+      color: #FFF;
+    }
+    img {
+      margin-right: 10px;
+    }
+    span {
+      color: $main-color;
+    }
+  }
+  &-block {
+    display: flex;
+  }
+  &-list {
+    margin-right: 55px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__item {
+      margin-bottom: 15px;
+      a {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #FFF;
+      }
+      span {
+        color: $main-color;
+      }
+    }
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      color: #FFFFFF;
+      margin-bottom: 15px;
+      &:hover {
+        color: #FFFFFF;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        margin-right: 5px;
+      }
+    }
+    &__phone {
+      display: flex;
+      align-items: flex-start;
+      &-links {
+
+      }
+        a {
+          font-weight: 700;
+          color: $main-color;
+          display: block;
+        }
+    }
+  }
+  &-social {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    color: #FFFFFF;
+    @include dfsb;
+    align-items: flex-start;
+    flex-direction: column;
+    &__links {
+      display: flex;
+    }
+    &__item {
+      margin-right: 5px;
+      margin-top: 5px;
+      display: block;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-copy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  &-company {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Cuprum', sans-serif; // для 1 строчки підключати новий шрифт не дуже вигідно
+  }
+
+  &-image {
+    transform: translateX(51px);
+    img {
+
+    }
+  }
+}
