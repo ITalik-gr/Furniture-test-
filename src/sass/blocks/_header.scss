@@ -139,7 +139,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 125%;
-    margin-left: 120px;
+    margin-left: 125px;
     span {
       color: $main-color;
     }
@@ -211,17 +211,7 @@
     position: absolute;
     bottom: 101px;
   }
-  &-arrows {
 
-  }
-  &-arrow {
-    &-next {
-
-    }
-    &-prev {
-
-    }
-  }
   &-paginations {
     font-size: 24px;
     line-height: 125%;
@@ -236,6 +226,41 @@
     &__text {
       width: 100vw;
       display: flex;
+    }
+    &-arrows {
+      @include dfc;
+      margin-top: 5px;
+    }
+    &__arrow {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      border: 1px solid transparent;
+      background: $text-color;
+      @include dfc;
+      cursor: pointer;
+      svg {
+        path {
+          fill: #FFFFFF;
+        }
+      }
+      &-next {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+      &-prev {
+        margin-right: 8px;
+      }
+      &-unactive {
+        border: 1px solid #1E2E36;
+        background: transparent;
+        svg {
+          path {
+            fill: #1E2E36;
+          }
+        }
+      }
     }
   }
 }

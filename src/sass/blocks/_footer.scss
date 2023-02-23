@@ -25,9 +25,10 @@
   }
   &-bottom {
     @include dfsb;
+    width: 110%;
   }
   &-text {
-    max-width: 662px;
+    max-width: 679px;
     width: 100%;
     padding: 46px 0 15px 0;
     height: 520px;
@@ -37,7 +38,7 @@
     font-size: 36px;
     line-height: 125%;
     color: #FFF;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     display: block;
     &:hover {
       color: #FFF;

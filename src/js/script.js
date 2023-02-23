@@ -197,6 +197,8 @@ let carousel1 = document.querySelector('.header-slider'),
     slides = document.querySelectorAll('.header-slide'),
     current = document.querySelector('#current'),
     total = document.querySelector('#total'),
+    prev = document.querySelector('.header-slider__arrow-prev'),
+    next = document.querySelector('.header-slider__arrow-next'),
     currentIndex = 0;
 
 function calcCurrentTotal() {
@@ -207,6 +209,20 @@ function calcCurrentTotal() {
     total.textContent = slides.length / 2;
     current.textContent = currentIndex + 1;
   }
+// може можна краще. тут міняє стилі для стрелки
+  if (currentIndex + 1 == slides.length / 2) {
+    next.classList.add('header-slider__arrow-unactive');
+  } else {
+    next.classList.remove('header-slider__arrow-unactive');
+  }
+
+  if (currentIndex == 0) {
+    prev.classList.add('header-slider__arrow-unactive');
+  } else {
+    prev.classList.remove('header-slider__arrow-unactive');
+  }
+
+
 }
 calcCurrentTotal();
 
@@ -215,7 +231,7 @@ function goToSlide(slideIndex) {
   carousel2.style.transform = `translateX(-${slideIndex * 100}vw)`;
 }
 
-document.querySelector('.header-slider__arrow-prev').addEventListener('click', () => {
+prev.addEventListener('click', () => {
   if (currentIndex > 0) {
     currentIndex--;
     goToSlide(currentIndex);
@@ -223,7 +239,7 @@ document.querySelector('.header-slider__arrow-prev').addEventListener('click', (
   calcCurrentTotal();
 });
 
-document.querySelector('.header-slider__arrow-next').addEventListener('click', () => {
+next.addEventListener('click', () => {
   if (currentIndex < carousel1.children.length - 1) {
     currentIndex++;
     goToSlide(currentIndex);

@@ -11,12 +11,15 @@
     height: 675px;
     @include dfc;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin-top: 37px;
+    padding-right: 25px;
   }
   &-form {
     background: #FFFFFF;
     border-left: 15px solid $main-color;
     border-radius: 3px 0 3px 0;
+    width: 504px;
+    height: 457px;
     @include dfc;
     flex-direction: column;
     padding: 50px 50px 50px 30px;

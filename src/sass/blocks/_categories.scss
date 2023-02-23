@@ -1,7 +1,7 @@
 .categories {
   padding-bottom: 100px;
   &-nav {
-    margin-top: 50px;
+    margin-top: 40px;
     &-list {
       @include dfc;
       justify-content: space-around;
@@ -70,7 +70,7 @@
       }
     }
     &__text {
-      padding: 15px 5px 15px 15px;
+      padding: 15px;
       font-size: 24px;
       line-height: 125%;
       text-transform: uppercase;
