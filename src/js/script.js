@@ -5,6 +5,18 @@ const swiper = new Swiper('.preference-slider', {
     prevEl: '.preference-arrow-prev',
     disabledClass: 'preference-arrow--disable',
   },
+  breakpoints: {
+    // when window width is >= 640px
+    1870: {
+      slidesPerView: 3,
+    },
+    1080: {
+      slidesPerView: 2,
+    },
+    300: {
+      slidesPerView: 1,
+    }
+  }
 });
 
 // CATEGORIES
@@ -246,3 +258,11 @@ next.addEventListener('click', () => {
   }
   calcCurrentTotal();
 });
+
+
+let burger = document.querySelector('.nav-burger'),
+    menu = document.querySelector('.menu');
+
+burger.addEventListener('click', ()=> {
+  menu.classList.toggle('menu-active');
+})
