@@ -23,7 +23,7 @@ const swiper = new Swiper('.preference-slider', {
 
 const categoriesData = [
   {
-    img: 'img/categ_item_1.png', 
+    img: 'img/categ_item_1.webp', 
     name: 'Ліжко Рамона', 
     price: 8999, 
     oldPrice: false, 
@@ -32,7 +32,7 @@ const categoriesData = [
     newItem: true
   },
   {
-    img: 'img/categ_item_2.png', 
+    img: 'img/categ_item_2.webp', 
     name: 'Ліжко Честер', 
     price: 7000, 
     oldPrice: 8999, 
@@ -41,7 +41,7 @@ const categoriesData = [
     newItem: false
   },
   {
-    img: 'img/categ_item_3.png', 
+    img: 'img/categ_item_3.webp', 
     name: 'Ліжко Венеція люкс', 
     price: 10999, 
     oldPrice: false, 
@@ -50,7 +50,7 @@ const categoriesData = [
     newItem: false
   },
   {
-    img: 'img/categ_item_4.png', 
+    img: 'img/categ_item_4.webp', 
     name: 'Ліжко Імперія', 
     price: 8400, 
     oldPrice: false, 
@@ -59,7 +59,7 @@ const categoriesData = [
     newItem: true
   },
   {
-    img: 'img/categ_item_5.png', 
+    img: 'img/categ_item_5.webp', 
     name: 'Ліжко Адель', 
     price: 3400, 
     oldPrice: false, 
@@ -68,7 +68,7 @@ const categoriesData = [
     newItem: false
   },
   {
-    img: 'img/categ_item_6.png', 
+    img: 'img/categ_item_6.webp', 
     name: 'Ліжко Атлант', 
     price: 7999, 
     oldPrice: 8300, 
@@ -79,7 +79,7 @@ const categoriesData = [
 ];
 const categoriesDataSofa = [
   {
-    img: 'img/categ_item_3.png', 
+    img: 'img/categ_item_3.webp', 
     name: 'Діван Рамона', 
     price: 8999, 
     oldPrice: false, 
@@ -88,7 +88,7 @@ const categoriesDataSofa = [
     newItem: true
   },
   {
-    img: 'img/categ_item_5.png', 
+    img: 'img/categ_item_5.webp', 
     name: 'Дівани Честер', 
     price: 7000, 
     oldPrice: 8999, 
@@ -97,7 +97,7 @@ const categoriesDataSofa = [
     newItem: false
   },
   {
-    img: 'img/categ_item_3.png', 
+    img: 'img/categ_item_3.webp', 
     name: 'Комод', 
     price: 10999, 
     oldPrice: false, 
@@ -106,7 +106,7 @@ const categoriesDataSofa = [
     newItem: false
   },
   {
-    img: 'img/categ_item_4.png', 
+    img: 'img/categ_item_4.webp', 
     name: 'Щось ще Імперія', 
     price: 8400, 
     oldPrice: false, 
