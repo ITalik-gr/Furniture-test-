@@ -5,16 +5,12 @@
 <h3 align="left"> <a target="_blank" href="https://italik-gr.github.io/Furniture-test-/dist/">Link</a> </h3>
 
 <p>
-  Сайт розроблений як тестове завдання. 
+  The site was developed as a test task. 
   </br>
-  На сайті є 2 слайдери, перший зроблений без бібліотек на js, другий через бібліотеку Swiper. </br>
-  В категоріях товарів таби працюють на JS через дата атрибути. Всі товари генеруються з масиву данних автоматично (наче з снрвера данні приходять).
+  There are 2 sliders on the site, the first one is made without js libraries, the second one is made using the Swiper library. </br>
+  In product categories, tabs work in JS through date attributes. All products are generated from a data array automatically (as if the data comes from a server).
 </p>
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ITalik_gr)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ITalik-gr)](https://git.io/streak-stats)
 
-[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=ITalik_gr)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=ITalik-gr)](https://github.com/ashutosh00710/github-readme-activity-graph)
