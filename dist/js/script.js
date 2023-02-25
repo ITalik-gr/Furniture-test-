@@ -1,10 +1,4 @@
-window.onload = function () {
-  document.body.classList.add('loaded_hiding');
-  window.setTimeout(function () {
-    document.body.classList.add('loaded');
-    document.body.classList.remove('loaded_hiding');
-  }, 500);
-}
+
 
 const swiper = new Swiper('.preference-slider', {
   slidesPerView: 3,
@@ -177,7 +171,7 @@ function renderItems(data) {
             ${sale ? 'categories-card_info--active' : null} ">Акція</div>
         </div>
         <div class="categories-card__image">
-            <img src=${img} alt=${name}>
+            <img src=${img} alt="${name}">
         </div>
         <div class="categories-card__text">
             <div class="categories-card__name">
