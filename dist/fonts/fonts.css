@@ -11,7 +11,7 @@
 }
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('../fonts/ProximaNova-Black.eot');
+	src: url('ProximaNova-Black.eot');
 	src: local('Proxima Nova Black'), local('ProximaNova-Black'),
 		url('ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
 		url('ProximaNova-Black.woff') format('woff'),
@@ -24,7 +24,7 @@
 	font-family: 'Proxima Nova';
 	src: url('ProximaNova-Bold.eot');
 	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
-		url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
 		url('ProximaNova-Bold.woff') format('woff'),
 		url('ProximaNova-Bold.ttf') format('truetype');
 	font-weight: bold;
