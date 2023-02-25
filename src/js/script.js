@@ -1,3 +1,11 @@
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 500);
+}
+
 const swiper = new Swiper('.preference-slider', {
   slidesPerView: 3,
   navigation: {
@@ -259,6 +267,8 @@ next.addEventListener('click', () => {
   calcCurrentTotal();
 });
 
+
+// меню на мобілкі
 
 let burger = document.querySelector('.nav-burger'),
     menu = document.querySelector('.menu');
