@@ -11,6 +11,4 @@
   In product categories, tabs work in JS through date attributes. All products are generated from a data array automatically (as if the data comes from a server).
 </p>
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ITalik-gr)](https://git.io/streak-stats)
-
-[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=ITalik-gr)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<a target="_blank" href="https://t.me/ITalik_gr">Telegram</a>
